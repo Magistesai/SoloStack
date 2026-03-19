@@ -10,5 +10,7 @@
   { "slug": "design", "name": "Design", "description": "Look professional without a design team", "icon": "🎨", "editorPick": "figma", "sponsorSlot": null },
   { "slug": "project-mgmt", "name": "Project Mgmt", "description": "Stay organized when you are the entire team", "icon": "📋", "editorPick": "linear", "sponsorSlot": null },
   { "slug": "monetization", "name": "Monetization", "description": "Billing, licensing, and revenue management", "icon": "💰", "editorPick": "lemon-squeezy", "sponsorSlot": null },
-  { "slug": "hosting", "name": "Hosting & DBs", "description": "Run your stack without a DevOps team", "icon": "🖥️", "editorPick": "railway", "sponsorSlot": null }
+  { "slug": "hosting", "name": "Hosting & DBs", "description": "Run your stack without a DevOps team", "icon": "🖥️", "editorPick": "railway", "sponsorSlot": null },
+  { "slug": "auth", "name": "Auth", "description": "Add user accounts without building auth from scratch", "icon": "🔐", "editorPick": "clerk", "sponsorSlot": null },
+  { "slug": "automation", "name": "Automation", "description": "Eliminate repetitive work before it compounds", "icon": "⚙️", "editorPick": "make", "sponsorSlot": null }
 ]

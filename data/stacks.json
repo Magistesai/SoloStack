@@ -25,7 +25,8 @@
     "tools": [
       { "toolId": "cursor", "role": "Code Editor", "note": "AI-first editor. Tab-complete entire functions, refactor with natural language. 10x faster than vanilla VSCode for greenfield work." },
       { "toolId": "vercel", "role": "Deployment", "note": "Push to GitHub, live in 30 seconds. No CI/CD config needed. Preview deployments built in." },
-      { "toolId": "supabase", "role": "Backend", "note": "Postgres + Auth + Storage in one dashboard. No server to configure. Auto-generated REST API." },
+      { "toolId": "clerk", "role": "Auth", "note": "Pre-built sign-up/sign-in UI in minutes. 10K free MAU. No auth code to write." },
+      { "toolId": "supabase", "role": "Database + Storage", "note": "Postgres + Storage in one dashboard. No server to configure. Auto-generated REST API." },
       { "toolId": "resend", "role": "Email", "note": "Copy-paste API key, send email in 5 minutes. React Email templates make welcome emails look professional instantly." },
       { "toolId": "stripe", "role": "Payments", "note": "Best-in-class docs. Copy the quickstart, have a working checkout in 45 minutes." },
       { "toolId": "tally", "role": "Waitlist / Feedback", "note": "Build a waitlist form in 2 minutes without touching code. Embed in your landing page." },
@@ -40,12 +41,12 @@
     "tagline": "Eliminate repetitive work before it accumulates",
     "description": "Solo founders lose hours to repetitive tasks: onboarding emails, support triage, social scheduling, status updates. This stack eliminates the highest-leverage manual work first.",
     "tools": [
-      { "toolId": "resend", "role": "Automated Emails", "note": "Trigger onboarding sequences, payment receipts, churn-prevention flows via API. Pair with Supabase Edge Functions for zero-infrastructure automation." },
+      { "toolId": "make", "role": "Workflow Automation", "note": "Connect your apps visually. Trigger Make scenarios from Stripe webhooks, form submissions, or new signups — no code required." },
+      { "toolId": "resend", "role": "Automated Emails", "note": "Trigger onboarding sequences, payment receipts, churn-prevention flows via API. Pair with Make for zero-code automation." },
       { "toolId": "beehiiv", "role": "Newsletter Automation", "note": "Automated welcome sequence, referral program, and boosts all built-in. Set it up once, it runs itself." },
       { "toolId": "typefully", "role": "Social Scheduling", "note": "Schedule a week of tweets in one sitting. Auto-plug threads as newsletter content. Reclaim 2-3 hours/week of manual posting." },
       { "toolId": "crisp", "role": "Support Automation", "note": "Chatbot handles FAQ at 3am. Knowledge base deflects repeat questions. You only touch real issues." },
       { "toolId": "plausible", "role": "Automated Reporting", "note": "Weekly email digest lands in your inbox automatically. No manual reporting, no dashboard-checking habit needed." },
-      { "toolId": "linear", "role": "Workflow Automation", "note": "Auto-assign, auto-close, auto-label. Build a triage workflow in 20 minutes that keeps the backlog from spiraling." },
       { "toolId": "lemon-squeezy", "role": "Revenue Automation", "note": "Automated tax collection, dunning emails, failed payment retries. Revenue ops on autopilot." }
     ],
     "addedDate": "2026-03-18"

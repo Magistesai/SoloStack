@@ -116,6 +116,30 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         </div>
       </div>
 
+      {/* Verdict box */}
+      {(tool.bestFor || tool.skipIf) && (
+        <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 mb-8 grid gap-3">
+          {tool.bestFor && (
+            <div className="flex gap-3">
+              <span className="text-green-400 text-base mt-0.5 flex-shrink-0">✓</span>
+              <div>
+                <div className="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-0.5">Best for</div>
+                <div className="text-white text-sm leading-relaxed">{tool.bestFor}</div>
+              </div>
+            </div>
+          )}
+          {tool.skipIf && (
+            <div className="flex gap-3">
+              <span className="text-yellow-400 text-base mt-0.5 flex-shrink-0">⚠</span>
+              <div>
+                <div className="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-0.5">Skip if</div>
+                <div className="text-white text-sm leading-relaxed">{tool.skipIf}</div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Review */}
       <div className="mb-10">
         <h2 className="text-xl font-bold text-white mb-4">Solo Founder Review</h2>

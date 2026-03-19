@@ -17,6 +17,8 @@ export interface Tool {
   sponsored: boolean;
   tags: string[];
   addedDate: string;         // ISO date YYYY-MM-DD
+  bestFor?: string;          // one-line "best for: ..." verdict
+  skipIf?: string;           // one-line "skip if: ..." verdict
 }
 
 export interface Category {
