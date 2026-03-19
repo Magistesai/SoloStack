@@ -1,0 +1,14 @@
+[
+  { "slug": "payments", "name": "Payments", "description": "Accept money without enterprise overhead", "icon": "💳", "editorPick": "stripe", "sponsorSlot": null },
+  { "slug": "analytics", "name": "Analytics", "description": "Understand your users without drowning in data", "icon": "📊", "editorPick": "plausible", "sponsorSlot": null },
+  { "slug": "launch-infra", "name": "Launch Infra", "description": "Ship fast and keep the lights on", "icon": "🚀", "editorPick": "vercel", "sponsorSlot": null },
+  { "slug": "ai-coding", "name": "AI Coding", "description": "AI pair programmers and code assistants", "icon": "🤖", "editorPick": "cursor", "sponsorSlot": null },
+  { "slug": "marketing", "name": "Marketing", "description": "Get found without a marketing team", "icon": "📣", "editorPick": "beehiiv", "sponsorSlot": null },
+  { "slug": "email", "name": "Email", "description": "Transactional and marketing email that just works", "icon": "✉️", "editorPick": "resend", "sponsorSlot": null },
+  { "slug": "support", "name": "Support", "description": "Handle customer questions solo", "icon": "💬", "editorPick": "crisp", "sponsorSlot": null },
+  { "slug": "legal", "name": "Legal", "description": "Protect yourself without a lawyer on retainer", "icon": "⚖️", "editorPick": "clerky", "sponsorSlot": null },
+  { "slug": "design", "name": "Design", "description": "Look professional without a design team", "icon": "🎨", "editorPick": "figma", "sponsorSlot": null },
+  { "slug": "project-mgmt", "name": "Project Mgmt", "description": "Stay organized when you are the entire team", "icon": "📋", "editorPick": "linear", "sponsorSlot": null },
+  { "slug": "monetization", "name": "Monetization", "description": "Billing, licensing, and revenue management", "icon": "💰", "editorPick": "lemon-squeezy", "sponsorSlot": null },
+  { "slug": "hosting", "name": "Hosting & DBs", "description": "Run your stack without a DevOps team", "icon": "🖥️", "editorPick": "railway", "sponsorSlot": null }
+]
