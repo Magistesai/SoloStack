@@ -1,7 +1,7 @@
 import toolsRaw from '../../data/tools.json';
 import categoriesRaw from '../../data/categories.json';
 
-const REQUIRED_TOOL_FIELDS: (keyof any)[] = ['id', 'name', 'slug', 'category', 'tagline', 'description', 'url', 'affiliateUrl', 'pricing', 'soloScore'];
+const REQUIRED_TOOL_FIELDS: (keyof any)[] = ['id', 'name', 'slug', 'category', 'tagline', 'description', 'url', 'affiliateUrl', 'logo', 'pricing', 'pricingType', 'soloScore', 'featured', 'sponsored', 'tags', 'addedDate'];
 const VALID_PRICING_TYPES = ['free', 'freemium', 'paid', 'usage', 'open-source'];
 
 export function validateData(): void {
