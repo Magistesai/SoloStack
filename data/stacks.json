@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "id": "zero-cost-launch",
+    "slug": "zero-cost-launch",
+    "name": "$0 Launch Stack",
+    "tagline": "Launch a real product with zero monthly costs",
+    "description": "Every tool in this stack has a free tier generous enough to get to your first 100 users without spending a cent. Chosen for absolute minimum friction.",
+    "tools": [
+      { "toolId": "vercel", "role": "Hosting & Deployment", "note": "Free tier handles millions of requests. Deploy from GitHub in seconds." },
+      { "toolId": "supabase", "role": "Database + Auth", "note": "Free tier includes 500MB database, 50K monthly active users, and S3-compatible storage." },
+      { "toolId": "resend", "role": "Transactional Email", "note": "3,000 free emails/month. More than enough until you have real users." },
+      { "toolId": "tally", "role": "Forms + Feedback", "note": "Unlimited free forms and submissions. Use for onboarding, feedback, support." },
+      { "toolId": "plausible", "role": "Analytics", "note": "30-day free trial. After that $9/mo — but you should be making money by then." },
+      { "toolId": "notion", "role": "Docs + Planning", "note": "Free tier for solo use. Run your entire business: roadmap, notes, CRM." },
+      { "toolId": "canva", "role": "Design + Marketing", "note": "Free tier covers all marketing assets, social posts, pitch decks." }
+    ],
+    "addedDate": "2026-03-18"
+  },
+  {
+    "id": "one-day-mvp",
+    "slug": "one-day-mvp",
+    "name": "1-Day MVP Stack",
+    "tagline": "Ship a working product in under 24 hours",
+    "description": "This stack is optimized for speed above all else. Every tool was chosen because you can be productive in under an hour. No config rabbit holes, no YAML hell, no waiting for approvals.",
+    "tools": [
+      { "toolId": "cursor", "role": "Code Editor", "note": "AI-first editor. Tab-complete entire functions, refactor with natural language. 10x faster than vanilla VSCode for greenfield work." },
+      { "toolId": "vercel", "role": "Deployment", "note": "Push to GitHub, live in 30 seconds. No CI/CD config needed. Preview deployments built in." },
+      { "toolId": "supabase", "role": "Backend", "note": "Postgres + Auth + Storage in one dashboard. No server to configure. Auto-generated REST API." },
+      { "toolId": "resend", "role": "Email", "note": "Copy-paste API key, send email in 5 minutes. React Email templates make welcome emails look professional instantly." },
+      { "toolId": "stripe", "role": "Payments", "note": "Best-in-class docs. Copy the quickstart, have a working checkout in 45 minutes." },
+      { "toolId": "tally", "role": "Waitlist / Feedback", "note": "Build a waitlist form in 2 minutes without touching code. Embed in your landing page." },
+      { "toolId": "linear", "role": "Task Tracking", "note": "Keyboard-first. Zero setup time. Create issues fast so nothing falls through the cracks when you're moving this quickly." }
+    ],
+    "addedDate": "2026-03-18"
+  },
+  {
+    "id": "automation-first",
+    "slug": "automation-first",
+    "name": "Automation-First Stack",
+    "tagline": "Eliminate repetitive work before it accumulates",
+    "description": "Solo founders lose hours to repetitive tasks: onboarding emails, support triage, social scheduling, status updates. This stack eliminates the highest-leverage manual work first.",
+    "tools": [
+      { "toolId": "resend", "role": "Automated Emails", "note": "Trigger onboarding sequences, payment receipts, churn-prevention flows via API. Pair with Supabase Edge Functions for zero-infrastructure automation." },
+      { "toolId": "beehiiv", "role": "Newsletter Automation", "note": "Automated welcome sequence, referral program, and boosts all built-in. Set it up once, it runs itself." },
+      { "toolId": "typefully", "role": "Social Scheduling", "note": "Schedule a week of tweets in one sitting. Auto-plug threads as newsletter content. Reclaim 2-3 hours/week of manual posting." },
+      { "toolId": "crisp", "role": "Support Automation", "note": "Chatbot handles FAQ at 3am. Knowledge base deflects repeat questions. You only touch real issues." },
+      { "toolId": "plausible", "role": "Automated Reporting", "note": "Weekly email digest lands in your inbox automatically. No manual reporting, no dashboard-checking habit needed." },
+      { "toolId": "linear", "role": "Workflow Automation", "note": "Auto-assign, auto-close, auto-label. Build a triage workflow in 20 minutes that keeps the backlog from spiraling." },
+      { "toolId": "lemon-squeezy", "role": "Revenue Automation", "note": "Automated tax collection, dunning emails, failed payment retries. Revenue ops on autopilot." }
+    ],
+    "addedDate": "2026-03-18"
+  }
+]
