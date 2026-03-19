@@ -29,10 +29,10 @@ export default function HomePage() {
             View Stack Bundles
           </Link>
         </div>
-        <div className="mt-8 flex items-center justify-center gap-6 text-sm text-gray-500">
-          <span>✓ Free to browse</span>
+        <div className="mt-8 flex items-center justify-center gap-8 text-sm text-gray-500">
+          <span>✓ {tools.length} tools curated</span>
+          <span>✓ {categories.length} categories</span>
           <span>✓ No signup required</span>
-          <span>✓ Updated weekly</span>
         </div>
       </section>
 
