@@ -32,7 +32,7 @@ export default function ToolCard({ tool, compact = false }: Props) {
             width={40}
             height={40}
             className="w-full h-full object-contain p-1"
-            onError={(e) => { (e.target as HTMLImageElement).src = '/logo-fallback.png'; }}
+            onError={(e) => { (e.target as HTMLImageElement).src = '/logo-fallback.svg'; }}
           />
         </div>
         <div className="flex-1 min-w-0">
