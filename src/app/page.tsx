@@ -12,7 +12,7 @@ export default function HomePage() {
       <section className="text-center mb-20">
         <div className="inline-flex items-center gap-2 bg-indigo-900/30 text-indigo-400 text-sm font-medium px-4 py-2 rounded-full mb-6 border border-indigo-800/50">
           <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span>
-          200+ tools rated by solo-founder fit
+          {tools.length}+ tools rated by solo-founder fit
         </div>
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
           The opinionated toolkit<br />
