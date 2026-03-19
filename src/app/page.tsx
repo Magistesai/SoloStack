@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { tools, categories, getFeaturedTools, getToolsByCategory } from '@/lib/data';
 import ToolCard from '@/components/ToolCard';
 
+const TODAY = '2026-03-19';
+const recentTools = tools
+  .filter(t => t.addedDate >= TODAY)
+  .sort((a, b) => b.soloScore - a.soloScore)
+  .slice(0, 4);
+
 export default function HomePage() {
   const featured = getFeaturedTools().slice(0, 6);
 
@@ -29,10 +35,11 @@ export default function HomePage() {
             View Stack Bundles
           </Link>
         </div>
-        <div className="mt-8 flex items-center justify-center gap-8 text-sm text-gray-500">
+        <div className="mt-8 flex items-center justify-center gap-6 text-sm text-gray-500 flex-wrap">
           <span>✓ {tools.length} tools curated</span>
           <span>✓ {categories.length} categories</span>
           <span>✓ No signup required</span>
+          <span>✓ Updated {new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
         </div>
       </section>
 
@@ -66,6 +73,29 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Recently Added */}
+      {recentTools.length > 0 && (
+        <section className="mb-20">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                <span className="text-green-400 text-xs font-semibold uppercase tracking-wider">Just Added</span>
+              </div>
+              <h2 className="text-2xl font-bold text-white">New to SoloStack</h2>
+            </div>
+            <Link href="/tools?sort=newest" className="text-indigo-400 hover:text-indigo-300 text-sm font-medium">
+              View all new tools →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {recentTools.map(tool => (
+              <ToolCard key={tool.id} tool={tool} compact />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Category grid */}
       <section>
