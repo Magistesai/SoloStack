@@ -5,6 +5,31 @@
 
 ---
 
+## Iteration Log
+
+### 2026-03-19 — Refinement Cycle 1 + 2
+
+**Cycle 1 changes (commit c13972a):**
+- Expanded catalog from 26 → 50 tools
+- Added 2 new categories: Auth (🔐) and Automation (⚙️)
+- Added `bestFor` / `skipIf` verdict fields to all 50 tools
+- Tool detail pages now show a structured Verdict box above the review
+- Fixed `metadataBase` — was hardcoded to solostack.dev, now uses `VERCEL_URL` env var
+- Fixed misleading "200+" tools count — now reads `tools.length` dynamically
+- Updated Automation-First stack to include Make, 1-Day MVP to include Clerk
+
+**Cycle 2 changes (commit d4b76e6):**
+- Header: added animated hamburger menu with full mobile drawer nav
+- Homepage: "Just Added" section with pulse indicator showing 4 newest tools
+- Homepage: added "Updated Mar 2026" freshness signal to stats bar
+
+**Current state:**
+- 50 tools, 14 categories, 3 stacks
+- 145 static pages built and deployed
+- All routes verified 200 on solostack-ten.vercel.app
+
+---
+
 ## Phase 1: Launch Week (Days 1–7)
 
 ### Organic Distribution
