@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   return stacks.map(s => ({ slug: s.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const stack = stacks.find(s => s.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const stack = stacks.find(s => s.slug === slug);
   if (!stack) return {};
   return {
     title: stack.name,
@@ -17,8 +18,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function StackPage({ params }: { params: { slug: string } }) {
-  const stack = stacks.find(s => s.slug === params.slug);
+export default async function StackPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const stack = stacks.find(s => s.slug === slug);
   if (!stack) notFound();
 
   return (

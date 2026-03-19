@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   return categories.map(c => ({ slug: c.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const cat = categories.find(c => c.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const cat = categories.find(c => c.slug === slug);
   if (!cat) return {};
   return {
     title: `Best ${cat.name} Tools for Solo Founders — Comparison`,
@@ -17,11 +18,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function ComparePage({ params }: { params: { slug: string } }) {
-  const cat = categories.find(c => c.slug === params.slug);
+export default async function ComparePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const cat = categories.find(c => c.slug === slug);
   if (!cat) notFound();
 
-  const catTools = getToolsByCategory(params.slug).sort((a, b) => b.soloScore - a.soloScore);
+  const catTools = getToolsByCategory(slug).sort((a, b) => b.soloScore - a.soloScore);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-16">
